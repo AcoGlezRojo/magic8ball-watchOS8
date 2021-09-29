@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A85BB3B2704E8BC0046354E /* magicball WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A85BB3A2704E8BC0046354E /* magicball WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A85BB412704E8BC0046354E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A85BB3F2704E8BC0046354E /* Interface.storyboard */; };
+		0A85BB432704E8BE0046354E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A85BB422704E8BE0046354E /* Assets.xcassets */; };
+		0A85BB492704E8BF0046354E /* magicball WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A85BB482704E8BF0046354E /* magicball WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A85BB4E2704E8BF0046354E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A85BB4D2704E8BF0046354E /* InterfaceController.swift */; };
+		0A85BB502704E8BF0046354E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A85BB4F2704E8BF0046354E /* ExtensionDelegate.swift */; };
+		0A85BB522704E8BF0046354E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A85BB512704E8BF0046354E /* NotificationController.swift */; };
+		0A85BB542704E8BF0046354E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A85BB532704E8BF0046354E /* ComplicationController.swift */; };
+		0A85BB562704E8C00046354E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A85BB552704E8C00046354E /* Assets.xcassets */; };
+		0A85BB622704E8C00046354E /* magicballTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A85BB612704E8C00046354E /* magicballTests.swift */; };
+		0A85BB6C2704E8C00046354E /* magicballUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A85BB6B2704E8C00046354E /* magicballUITests.swift */; };
+		0A85BB6E2704E8C00046354E /* magicballUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A85BB6D2704E8C00046354E /* magicballUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A85BB3C2704E8BC0046354E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A85BB302704E8BB0046354E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A85BB392704E8BC0046354E;
+			remoteInfo = "magicball WatchKit App";
+		};
+		0A85BB4A2704E8BF0046354E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A85BB302704E8BB0046354E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A85BB472704E8BF0046354E;
+			remoteInfo = "magicball WatchKit Extension";
+		};
+		0A85BB5E2704E8C00046354E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A85BB302704E8BB0046354E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A85BB472704E8BF0046354E;
+			remoteInfo = "magicball WatchKit Extension";
+		};
+		0A85BB682704E8C00046354E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A85BB302704E8BB0046354E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A85BB392704E8BC0046354E;
+			remoteInfo = "magicball WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A85BB742704E8C00046354E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A85BB492704E8BF0046354E /* magicball WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A85BB782704E8C00046354E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0A85BB3B2704E8BC0046354E /* magicball WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A85BB362704E8BC0046354E /* magicball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magicball.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A85BB3A2704E8BC0046354E /* magicball WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "magicball WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A85BB402704E8BC0046354E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0A85BB422704E8BE0046354E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A85BB482704E8BF0046354E /* magicball WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "magicball WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A85BB4D2704E8BF0046354E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0A85BB4F2704E8BF0046354E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0A85BB512704E8BF0046354E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0A85BB532704E8BF0046354E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		0A85BB552704E8C00046354E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A85BB572704E8C00046354E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A85BB582704E8C00046354E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0A85BB5D2704E8C00046354E /* magicballTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magicballTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A85BB612704E8C00046354E /* magicballTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magicballTests.swift; sourceTree = "<group>"; };
+		0A85BB672704E8C00046354E /* magicballUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magicballUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A85BB6B2704E8C00046354E /* magicballUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magicballUITests.swift; sourceTree = "<group>"; };
+		0A85BB6D2704E8C00046354E /* magicballUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magicballUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A85BB452704E8BF0046354E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A85BB5A2704E8C00046354E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A85BB642704E8C00046354E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A85BB2F2704E8BB0046354E = {
+			isa = PBXGroup;
+			children = (
+				0A85BB3E2704E8BC0046354E /* magicball WatchKit App */,
+				0A85BB4C2704E8BF0046354E /* magicball WatchKit Extension */,
+				0A85BB602704E8C00046354E /* magicballTests */,
+				0A85BB6A2704E8C00046354E /* magicballUITests */,
+				0A85BB372704E8BC0046354E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A85BB372704E8BC0046354E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A85BB362704E8BC0046354E /* magicball.app */,
+				0A85BB3A2704E8BC0046354E /* magicball WatchKit App.app */,
+				0A85BB482704E8BF0046354E /* magicball WatchKit Extension.appex */,
+				0A85BB5D2704E8C00046354E /* magicballTests.xctest */,
+				0A85BB672704E8C00046354E /* magicballUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A85BB3E2704E8BC0046354E /* magicball WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0A85BB3F2704E8BC0046354E /* Interface.storyboard */,
+				0A85BB422704E8BE0046354E /* Assets.xcassets */,
+			);
+			path = "magicball WatchKit App";
+			sourceTree = "<group>";
+		};
+		0A85BB4C2704E8BF0046354E /* magicball WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0A85BB4D2704E8BF0046354E /* InterfaceController.swift */,
+				0A85BB4F2704E8BF0046354E /* ExtensionDelegate.swift */,
+				0A85BB512704E8BF0046354E /* NotificationController.swift */,
+				0A85BB532704E8BF0046354E /* ComplicationController.swift */,
+				0A85BB552704E8C00046354E /* Assets.xcassets */,
+				0A85BB572704E8C00046354E /* Info.plist */,
+				0A85BB582704E8C00046354E /* PushNotificationPayload.apns */,
+			);
+			path = "magicball WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		0A85BB602704E8C00046354E /* magicballTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A85BB612704E8C00046354E /* magicballTests.swift */,
+			);
+			path = magicballTests;
+			sourceTree = "<group>";
+		};
+		0A85BB6A2704E8C00046354E /* magicballUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A85BB6B2704E8C00046354E /* magicballUITests.swift */,
+				0A85BB6D2704E8C00046354E /* magicballUITestsLaunchTests.swift */,
+			);
+			path = magicballUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A85BB352704E8BC0046354E /* magicball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A85BB792704E8C00046354E /* Build configuration list for PBXNativeTarget "magicball" */;
+			buildPhases = (
+				0A85BB342704E8BC0046354E /* Resources */,
+				0A85BB782704E8C00046354E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A85BB3D2704E8BC0046354E /* PBXTargetDependency */,
+			);
+			name = magicball;
+			productName = magicball;
+			productReference = 0A85BB362704E8BC0046354E /* magicball.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		0A85BB392704E8BC0046354E /* magicball WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A85BB752704E8C00046354E /* Build configuration list for PBXNativeTarget "magicball WatchKit App" */;
+			buildPhases = (
+				0A85BB382704E8BC0046354E /* Resources */,
+				0A85BB742704E8C00046354E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A85BB4B2704E8BF0046354E /* PBXTargetDependency */,
+			);
+			name = "magicball WatchKit App";
+			productName = "magicball WatchKit App";
+			productReference = 0A85BB3A2704E8BC0046354E /* magicball WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0A85BB472704E8BF0046354E /* magicball WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A85BB712704E8C00046354E /* Build configuration list for PBXNativeTarget "magicball WatchKit Extension" */;
+			buildPhases = (
+				0A85BB442704E8BF0046354E /* Sources */,
+				0A85BB452704E8BF0046354E /* Frameworks */,
+				0A85BB462704E8BF0046354E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "magicball WatchKit Extension";
+			productName = "magicball WatchKit Extension";
+			productReference = 0A85BB482704E8BF0046354E /* magicball WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		0A85BB5C2704E8C00046354E /* magicballTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A85BB7C2704E8C00046354E /* Build configuration list for PBXNativeTarget "magicballTests" */;
+			buildPhases = (
+				0A85BB592704E8C00046354E /* Sources */,
+				0A85BB5A2704E8C00046354E /* Frameworks */,
+				0A85BB5B2704E8C00046354E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A85BB5F2704E8C00046354E /* PBXTargetDependency */,
+			);
+			name = magicballTests;
+			productName = magicballTests;
+			productReference = 0A85BB5D2704E8C00046354E /* magicballTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A85BB662704E8C00046354E /* magicballUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A85BB7F2704E8C00046354E /* Build configuration list for PBXNativeTarget "magicballUITests" */;
+			buildPhases = (
+				0A85BB632704E8C00046354E /* Sources */,
+				0A85BB642704E8C00046354E /* Frameworks */,
+				0A85BB652704E8C00046354E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A85BB692704E8C00046354E /* PBXTargetDependency */,
+			);
+			name = magicballUITests;
+			productName = magicballUITests;
+			productReference = 0A85BB672704E8C00046354E /* magicballUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A85BB302704E8BB0046354E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					0A85BB352704E8BC0046354E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					0A85BB392704E8BC0046354E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					0A85BB472704E8BF0046354E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					0A85BB5C2704E8C00046354E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 0A85BB472704E8BF0046354E;
+					};
+					0A85BB662704E8C00046354E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 0A85BB392704E8BC0046354E;
+					};
+				};
+			};
+			buildConfigurationList = 0A85BB332704E8BB0046354E /* Build configuration list for PBXProject "magicball" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A85BB2F2704E8BB0046354E;
+			productRefGroup = 0A85BB372704E8BC0046354E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A85BB352704E8BC0046354E /* magicball */,
+				0A85BB392704E8BC0046354E /* magicball WatchKit App */,
+				0A85BB472704E8BF0046354E /* magicball WatchKit Extension */,
+				0A85BB5C2704E8C00046354E /* magicballTests */,
+				0A85BB662704E8C00046354E /* magicballUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A85BB342704E8BC0046354E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A85BB382704E8BC0046354E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A85BB432704E8BE0046354E /* Assets.xcassets in Resources */,
+				0A85BB412704E8BC0046354E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A85BB462704E8BF0046354E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A85BB562704E8C00046354E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A85BB5B2704E8C00046354E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A85BB652704E8C00046354E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A85BB442704E8BF0046354E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A85BB522704E8BF0046354E /* NotificationController.swift in Sources */,
+				0A85BB542704E8BF0046354E /* ComplicationController.swift in Sources */,
+				0A85BB502704E8BF0046354E /* ExtensionDelegate.swift in Sources */,
+				0A85BB4E2704E8BF0046354E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A85BB592704E8C00046354E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A85BB622704E8C00046354E /* magicballTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A85BB632704E8C00046354E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A85BB6C2704E8C00046354E /* magicballUITests.swift in Sources */,
+				0A85BB6E2704E8C00046354E /* magicballUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A85BB3D2704E8BC0046354E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A85BB392704E8BC0046354E /* magicball WatchKit App */;
+			targetProxy = 0A85BB3C2704E8BC0046354E /* PBXContainerItemProxy */;
+		};
+		0A85BB4B2704E8BF0046354E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A85BB472704E8BF0046354E /* magicball WatchKit Extension */;
+			targetProxy = 0A85BB4A2704E8BF0046354E /* PBXContainerItemProxy */;
+		};
+		0A85BB5F2704E8C00046354E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A85BB472704E8BF0046354E /* magicball WatchKit Extension */;
+			targetProxy = 0A85BB5E2704E8C00046354E /* PBXContainerItemProxy */;
+		};
+		0A85BB692704E8C00046354E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A85BB392704E8BC0046354E /* magicball WatchKit App */;
+			targetProxy = 0A85BB682704E8C00046354E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A85BB3F2704E8BC0046354E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A85BB402704E8BC0046354E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A85BB6F2704E8C00046354E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A85BB702704E8C00046354E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A85BB722704E8C00046354E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUT7U6632;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "magicball WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "magicball WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.acoidan.magicball.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		0A85BB732704E8C00046354E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUT7U6632;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "magicball WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "magicball WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.acoidan.magicball.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		0A85BB762704E8C00046354E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUT7U6632;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = magicball_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "magicball WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.acoidan.magicball.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		0A85BB772704E8C00046354E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUT7U6632;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = magicball_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "magicball WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.acoidan.magicball.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		0A85BB7A2704E8C00046354E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUT7U6632;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.acoidan.magicball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0A85BB7B2704E8C00046354E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUT7U6632;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.acoidan.magicball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0A85BB7D2704E8C00046354E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUT7U6632;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.acoidan.magicballTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magicball WatchKit Extension.appex/magicball WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		0A85BB7E2704E8C00046354E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUT7U6632;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.acoidan.magicballTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/magicball WatchKit Extension.appex/magicball WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		0A85BB802704E8C00046354E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUT7U6632;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.acoidan.magicballUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "magicball WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		0A85BB812704E8C00046354E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUT7U6632;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.acoidan.magicballUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "magicball WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A85BB332704E8BB0046354E /* Build configuration list for PBXProject "magicball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A85BB6F2704E8C00046354E /* Debug */,
+				0A85BB702704E8C00046354E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A85BB712704E8C00046354E /* Build configuration list for PBXNativeTarget "magicball WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A85BB722704E8C00046354E /* Debug */,
+				0A85BB732704E8C00046354E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A85BB752704E8C00046354E /* Build configuration list for PBXNativeTarget "magicball WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A85BB762704E8C00046354E /* Debug */,
+				0A85BB772704E8C00046354E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A85BB792704E8C00046354E /* Build configuration list for PBXNativeTarget "magicball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A85BB7A2704E8C00046354E /* Debug */,
+				0A85BB7B2704E8C00046354E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A85BB7C2704E8C00046354E /* Build configuration list for PBXNativeTarget "magicballTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A85BB7D2704E8C00046354E /* Debug */,
+				0A85BB7E2704E8C00046354E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A85BB7F2704E8C00046354E /* Build configuration list for PBXNativeTarget "magicballUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A85BB802704E8C00046354E /* Debug */,
+				0A85BB812704E8C00046354E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A85BB302704E8BB0046354E /* Project object */;
+}
